@@ -1,14 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* I changed the color during the testing period to reduce eye strain */
+  -background-color: rgb(145, 99, 99);
 }
 
 img {
   width: 600px;
+  margin-bottom: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
 }
 
 button {
@@ -16,6 +29,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
+  margin-bottom: 16px;
 }
 
 input {
@@ -24,4 +39,31 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 10px;
+  padding: 20px;
+  
+}
+.footer {
+  background-color: lightgray;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
